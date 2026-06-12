@@ -22,3 +22,13 @@ Example:
 - Switch entity still shows OFF
 
 This appears to be a device firmware behavior rather than a quirk issue.
+
+Additional observation:
+
+Commands work correctly (switch, countdown and fan speed), however state synchronization appears incomplete.
+
+When changing fan speed, the physical device responds correctly, but the corresponding entities in ZHA are not always updated to reflect the actual device state.
+
+Likewise, changes occurring on the device itself are not consistently reflected back to ZHA.
+
+This suggests that some datapoints may not be reported by the device, or that additional datapoints are required to correctly track the running state.
