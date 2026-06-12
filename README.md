@@ -1,2 +1,12 @@
-# Tuya-T2-Z62-ZigBee-Fan-Switch-ZHA-Quirk
-TS0601 Tuya T2-Z62 Fan Switch (5-Speed) ZHA Quirk
+Device: Tuya T2-Z62
+Model: TS0601
+Manufacturer: _TZE28C1000000_z5jz7wpo
+
+Features:
+- On/Off switch
+- 5-speed fan control
+- Countdown timer
+- Power-on state
+
+Tested and working with ZHA.
+Fan speed requires enum mapping (Speed_1 ... Speed_5).
